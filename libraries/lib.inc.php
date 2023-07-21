@@ -6,6 +6,8 @@
 	 * $Id: lib.inc.php,v 1.123 2008/04/06 01:10:35 xzilla Exp $
 	 */
 
+	require __DIR__ . '/../vendor/autoload.php';
+
 	include_once('./libraries/decorator.inc.php');
 	include_once('./lang/translations.php');
 
@@ -275,4 +277,3 @@
 	}
 
 	$plugin_manager = new PluginManager($_language);
-?>
